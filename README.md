@@ -19,9 +19,9 @@ My portfolio website dedicated to sharing projects, hobbies, and who I am :)
 
 ## Git Workflow
 
-1. Get up to date. On master branch:
+1. Get up to date. On main branch:
     <br> `git fetch`
-    <br> `git pull origin master`
+    <br> `git pull origin main`
 
 2. Create a new feature branch:
     `git checkout -b [feature-branch-name]`
