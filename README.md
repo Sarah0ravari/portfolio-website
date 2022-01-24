@@ -4,6 +4,7 @@ My portfolio website dedicated to sharing projects, hobbies, and who I am :)
 ## Goals
 
 - Solid design using Figma
+    - https://www.figma.com/file/Nhzn4xVTJHzgordjDPKlqq/Sarah's-Portfolio-Website?node-id=7%3A44
 - Single Page Application using React
 - Mobile first design -- responsive. Aim is to be simple.
 - Good git workflow
