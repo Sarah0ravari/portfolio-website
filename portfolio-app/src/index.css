@@ -2,8 +2,15 @@
   box-sizing: border-box;
 }
 
+@font-face {
+  font-family: 'Rokkitt';
+  src: local('Rokkitt'), url(./fonts/Rokkitt.ttf) format('truetype');
+}
+
 body {
   padding: 0;
   margin: 0;
   background-color: #F3FCFF;
+  font-family: 'Rokkitt';
+  color: #593434;
 }

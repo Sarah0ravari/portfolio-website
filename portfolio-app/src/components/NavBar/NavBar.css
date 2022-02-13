@@ -1,0 +1,61 @@
+.container {
+  height: 100px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  font-size: 24px;
+}
+
+.logoContainer, .navigationContainer {
+  display: flex;
+  align-items: center;
+}
+
+.logoContainer {
+  flex-basis: 12%;
+}
+
+.navigationContainer {
+  flex-basis: 33%;
+}
+
+.hamburger {
+  display: none;
+}
+
+.logo {
+  margin-left: 36px;
+}
+
+.homeLink {
+  margin-left: 15px;
+}
+
+.navLink {
+  flex: 1;
+  margin-right: 36px;
+}
+
+@media (max-width: 768px) {
+  .navigationContainer {
+    display: none;
+  }
+
+  .logo {
+    margin-left: 15px;
+    height: 60px;
+    width: 60px;
+  }
+
+  .homeLink {
+    display: none;
+  }
+
+  .hamburger {
+    display: block;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-right: 15px;
+    padding-top: 8px;
+  }
+}

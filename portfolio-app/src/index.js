@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import PortfolioApp from './components/main/PortfolioApp';
+import PortfolioApp from './components/Main/PortfolioApp';
 
 
 ReactDOM.render(

@@ -1,7 +1,10 @@
+import NavBar from '../NavBar/NavBar';
 import './PortfolioApp.css';
 
-function App() {
-  return null
+function PortfolioApp() {
+  return (
+    <NavBar />
+  )
 }
 
-export default App;
+export default PortfolioApp;
