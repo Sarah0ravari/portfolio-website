@@ -1,13 +1,13 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.css';
+import { BrowserRouter } from 'react-router-dom'
+import { render } from 'react-dom';
 import PortfolioApp from './components/Main/PortfolioApp';
 
+import './index.css';
 
-ReactDOM.render(
-  <React.StrictMode>
+render(
+  <BrowserRouter>
     <PortfolioApp />
-  </React.StrictMode>,
+  </BrowserRouter>,
   document.getElementById('root')
 );
 
