@@ -1,9 +1,8 @@
-.container {
+.navContainer {
   height: 100px;
   width: 100%;
   display: flex;
   justify-content: space-between;
-  font-size: 24px;
 }
 
 .logoContainer, .navigationContainer {
@@ -25,6 +24,13 @@
 
 .logo {
   margin-left: 36px;
+}
+
+.link {
+  font-size: 24px;
+  text-decoration: none;
+  color: #593434;
+  cursor: pointer;
 }
 
 .homeLink {
