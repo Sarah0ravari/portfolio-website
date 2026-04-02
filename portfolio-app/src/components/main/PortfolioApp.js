@@ -112,7 +112,7 @@ function PortfolioApp() {
         <section className="heroSection" id="home">
           <div className="heroCopy">
             <p className="eyebrow">Sarah (Sadaf) Draper</p>
-            <h1>Software engineer building thoughtful data products and modern internal tools.</h1>
+            <h1>Software engineer for data products and tools.</h1>
             <div className="focusInline">
               <p className="focusLabel">Current focus</p>
               <p className="focusText">Analytics engineering, dashboards, and AI-powered product workflows</p>

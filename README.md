@@ -1,42 +1,82 @@
-# Portfolio Website 🌤
-My portfolio website dedicated to sharing projects, hobbies, and who I am :)
+# Sarah Draper Portfolio
 
-## Goals
+Recruiter-facing portfolio website for Sarah (Sadaf) Draper. The site highlights software engineering, analytics, machine learning, and data product work with links to GitHub, LinkedIn, Kaggle, YouTube, and DailyDataHero.
 
-- Solid design using Figma
-    - https://www.figma.com/file/Nhzn4xVTJHzgordjDPKlqq/Sarah's-Portfolio-Website?node-id=7%3A44
-- Single Page Application using React
-- Mobile first design -- responsive. Aim is to be simple.
-- Good git workflow
-- Hosted on AWS
-- Standard portfolio website features + pages
-    - Portfolio (list of past projects - grid view)
-    - About (bio, hobbies, paintins)
-    - Resume (experience, courses completed)
-    - Contact (email, links to socials)
-- Some animation on page change (swipe style, left right navigation - add arrows onHover, enable arrow key?)
+## Stack
 
-<br>
+- React 17
+- Create React App
+- Custom CSS
+- GitHub Pages for deployment
 
-## Git Workflow
+## Project Structure
 
-1. Get up to date. On main branch:
-    <br> `git fetch`
-    <br> `git pull origin main`
+- App source: `portfolio-app/`
+- Main page content: `portfolio-app/src/components/main/PortfolioApp.js`
+- Main styles: `portfolio-app/src/components/main/PortfolioApp.css`
+- Navigation: `portfolio-app/src/components/NavBar/`
 
-2. Create a new feature branch:
-    `git checkout -b [feature-branch-name]`
-    
-3. Work on feature ...
+## Local Development
 
-4. When ready, save progress. In project root directory:
-    <br> `git add .`
-    <br> `git commit -m "Added logo"`
-    
-5. Push branch to Github
-    `git push origin [feature-branch-name]`
-    
-6. In Github dashboard, click button that pops up to create pull request.
+From the app directory:
 
-7. Self-review code. If looks good (no merge conflicts) click green Squash and Merge button
-  
+```bash
+cd portfolio-app
+npm install
+npm start
+```
+
+Because the app is configured for GitHub Pages, the local dev URL may open under:
+
+```text
+http://localhost:3000/portfolio-website
+```
+
+If port `3000` is already in use, React will offer another port.
+
+## Production Build
+
+```bash
+cd portfolio-app
+npm run build
+```
+
+The production output is created in:
+
+```text
+portfolio-app/build
+```
+
+## Deploy to GitHub Pages
+
+This repo is configured to publish to:
+
+```text
+https://sarah0ravari.github.io/portfolio-website/
+```
+
+Deploy steps:
+
+```bash
+cd /Users/sarahdraper/Desktop/Desktop/portfolio-site
+git push origin main
+
+cd /Users/sarahdraper/Desktop/Desktop/portfolio-site/portfolio-app
+npm run deploy
+```
+
+If `gh-pages` fails because of a stale cache, clear the cached publish repo and rerun deploy:
+
+```bash
+rm -rf /Users/sarahdraper/Desktop/Desktop/portfolio-site/portfolio-app/node_modules/.cache/gh-pages
+npm run deploy
+```
+
+## Notes
+
+- The site intentionally avoids private desktop-only personal information.
+- Resume content on the site is public-safe and summary-based.
+- If GitHub Pages shows `404`, confirm that:
+  - `main` has been pushed
+  - the `gh-pages` branch was created successfully
+  - GitHub repo `Settings > Pages` is set to deploy from `gh-pages`
