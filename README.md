@@ -1,4 +1,4 @@
-# Sarah Draper Portfolio
+# <img src="portfolio-app/public/favicon.svg" alt="SD logo" width="28" /> Sarah Draper Portfolio
 
 Personal brand and recruiter-facing portfolio website for Sarah (Sadaf) Draper. The site highlights software engineering, analytics, machine learning, and data product work with links to GitHub, LinkedIn, Kaggle, YouTube, and DailyDataHero.
 
