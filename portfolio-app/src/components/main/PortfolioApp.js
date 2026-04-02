@@ -55,11 +55,11 @@ const skillGroups = [
   },
   {
     heading: 'Data and Cloud',
-    items: ['BigQuery', 'Apache Spark', 'Airflow', 'Google Cloud', 'SQLite', 'Google Sheets API']
+    items: ['BigQuery', 'Apache Spark', 'Airflow', 'Google Cloud', 'Kafka', 'MongoDB', 'NoSQL', 'SQLite', 'Google Sheets API']
   },
   {
     heading: 'ML and Analytics',
-    items: ['PyTorch', 'TensorFlow', 'Scikit-learn', 'XGBoost', 'Data Visualization', 'Experimentation']
+    items: ['PyTorch', 'TensorFlow', 'Scikit-learn', 'Pandas', 'XGBoost', 'Data Visualization', 'Experimentation']
   },
   {
     heading: 'Product and App',

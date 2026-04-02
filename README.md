@@ -1,6 +1,6 @@
 # Sarah Draper Portfolio
 
-Recruiter-facing portfolio website for Sarah (Sadaf) Draper. The site highlights software engineering, analytics, machine learning, and data product work with links to GitHub, LinkedIn, Kaggle, YouTube, and DailyDataHero.
+Personal brand and recruiter-facing portfolio website for Sarah (Sadaf) Draper. The site highlights software engineering, analytics, machine learning, and data product work with links to GitHub, LinkedIn, Kaggle, YouTube, and DailyDataHero.
 
 ## Stack
 
