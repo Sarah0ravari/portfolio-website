@@ -70,6 +70,7 @@ const skillGroups = [
 const credentials = [
   'Master’s thesis: Optimizing Solar Energy Efficiency Using Machine Learning Models (California State University, Northridge, 2024)',
   'Google Cloud Professional Data Engineer, in progress',
+  'Foundations of AI and Machine Learning for Java Developers by Frank Greco',
   'Engineer Data for Predictive Modeling with BigQuery ML Skill Badge',
   'AWS Academy Cloud Foundations'
 ];
