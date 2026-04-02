@@ -1,0 +1,367 @@
+.appShell {
+  min-height: 100vh;
+  background:
+    radial-gradient(circle at top left, rgba(255, 207, 138, 0.35), transparent 30%),
+    radial-gradient(circle at top right, rgba(66, 134, 123, 0.16), transparent 28%),
+    linear-gradient(180deg, #fff8ef 0%, #f6efe5 100%);
+}
+
+main {
+  padding: 0 24px 72px;
+}
+
+.heroSection,
+.sectionBlock,
+.contactStrip {
+  width: min(1180px, 100%);
+  margin: 0 auto;
+}
+
+.heroSection {
+  padding: 48px 0 36px;
+  display: grid;
+  grid-template-columns: 1.2fr 0.8fr;
+  gap: 36px;
+  align-items: center;
+}
+
+.eyebrow,
+.sectionLabel,
+.projectTag,
+.floatingCard p {
+  text-transform: uppercase;
+  letter-spacing: 0.18em;
+  font-size: 0.8rem;
+  color: #8d5f39;
+}
+
+.heroCopy h1,
+.sectionHeading h2,
+.contactStrip h2 {
+  margin: 0;
+  color: #1f2d2a;
+  line-height: 1.02;
+}
+
+.heroCopy h1 {
+  font-size: clamp(2.2rem, 5vw, 4.2rem);
+  max-width: 12ch;
+}
+
+.heroText {
+  max-width: 60ch;
+  font-size: 1.2rem;
+  line-height: 1.6;
+  color: #41514d;
+}
+
+.focusInline {
+  margin-top: 18px;
+  margin-bottom: 18px;
+}
+
+.focusLabel {
+  margin: 0 0 6px;
+  text-transform: uppercase;
+  letter-spacing: 0.16em;
+  font-size: 0.8rem;
+  color: #8d5f39;
+}
+
+.focusText {
+  margin: 0;
+  font-size: 1.15rem;
+  line-height: 1.5;
+  color: #1f2d2a;
+  max-width: 34rem;
+}
+
+.heroActions,
+.contactActions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+  margin-top: 28px;
+}
+
+.primaryButton,
+.secondaryButton,
+.projectCard a,
+.credentialCard a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 48px;
+  padding: 0 20px;
+  border-radius: 999px;
+  text-decoration: none;
+  transition: transform 180ms ease, box-shadow 180ms ease, background-color 180ms ease;
+}
+
+.primaryButton {
+  background: #1f2d2a;
+  color: #fff8ef;
+  box-shadow: 0 16px 30px rgba(31, 45, 42, 0.18);
+}
+
+.secondaryButton,
+.projectCard a,
+.credentialCard a {
+  background: rgba(255, 255, 255, 0.66);
+  color: #1f2d2a;
+  border: 1px solid rgba(31, 45, 42, 0.12);
+}
+
+.primaryButton:hover,
+.secondaryButton:hover,
+.projectCard a:hover,
+.credentialCard a:hover {
+  transform: translateY(-2px);
+}
+
+.heroStats {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 16px;
+  margin-top: 32px;
+}
+
+.heroStats div,
+.floatingCard,
+.aboutPanel,
+.highlightCard,
+.projectCard,
+.skillCard,
+.credentialCard {
+  border: 1px solid rgba(31, 45, 42, 0.09);
+  background: rgba(255, 255, 255, 0.72);
+  backdrop-filter: blur(12px);
+  box-shadow: 0 18px 40px rgba(101, 78, 52, 0.09);
+}
+
+.heroStats div {
+  padding: 18px;
+  border-radius: 22px;
+}
+
+.heroStats strong,
+.floatingCard strong {
+  display: block;
+  font-size: 1.1rem;
+  color: #1f2d2a;
+}
+
+.heroStats span {
+  display: block;
+  margin-top: 6px;
+  line-height: 1.5;
+  color: #556863;
+}
+
+.heroVisual {
+  position: relative;
+  min-height: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.portraitFrame {
+  width: min(420px, 100%);
+  border-radius: 36px;
+  overflow: hidden;
+  background: linear-gradient(180deg, #f9d9b8 0%, #bfd8cf 100%);
+  box-shadow: 0 30px 70px rgba(57, 78, 73, 0.18);
+}
+
+.portraitFrame img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.sectionBlock {
+  padding: 56px 0 12px;
+}
+
+.sectionHeading {
+  max-width: 760px;
+  margin-bottom: 28px;
+}
+
+.sectionHeading h2,
+.contactStrip h2 {
+  font-size: clamp(2rem, 4vw, 3.35rem);
+}
+
+.aboutGrid,
+.credentialsLayout {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 24px;
+}
+
+.aboutPanel,
+.credentialCard,
+.projectCard,
+.skillCard {
+  border-radius: 28px;
+  padding: 26px;
+}
+
+.aboutPanel p,
+.projectSummary,
+.credentialCard p,
+.credentialCard li,
+.projectCard li {
+  color: #495a56;
+  line-height: 1.7;
+}
+
+.highlightList {
+  display: grid;
+  gap: 16px;
+}
+
+.highlightCard {
+  padding: 20px;
+  border-radius: 22px;
+  color: #243531;
+  font-size: 1.02rem;
+  line-height: 1.6;
+}
+
+.projectGrid,
+.skillsGrid,
+.resumeGrid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 22px;
+}
+
+.projectCard h3,
+.skillCard h3,
+.resumeCard h3,
+.credentialCard h3 {
+  margin-top: 8px;
+  margin-bottom: 10px;
+  color: #1f2d2a;
+  font-size: 1.5rem;
+}
+
+.projectCard ul,
+.resumeCard ul,
+.credentialCard ul {
+  margin: 0 0 22px;
+  padding-left: 18px;
+}
+
+.resumeCard {
+  border: 1px solid rgba(31, 45, 42, 0.09);
+  background: rgba(255, 255, 255, 0.72);
+  backdrop-filter: blur(12px);
+  box-shadow: 0 18px 40px rgba(101, 78, 52, 0.09);
+  border-radius: 28px;
+  padding: 26px;
+}
+
+.resumeCard li,
+.resumeNote p {
+  color: #495a56;
+  line-height: 1.7;
+}
+
+.resumeNote {
+  margin-top: 22px;
+  border: 1px solid rgba(31, 45, 42, 0.09);
+  background: rgba(255, 255, 255, 0.72);
+  backdrop-filter: blur(12px);
+  box-shadow: 0 18px 40px rgba(101, 78, 52, 0.09);
+  border-radius: 28px;
+  padding: 26px;
+}
+
+.pillRow {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.pill {
+  padding: 10px 14px;
+  border-radius: 999px;
+  background: #f3e3cf;
+  color: #4d4d42;
+  font-size: 0.96rem;
+}
+
+.contactStrip {
+  margin-top: 64px;
+  padding: 34px;
+  border-radius: 32px;
+  background: linear-gradient(135deg, #1f2d2a 0%, #35544f 100%);
+  color: #fff8ef;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+}
+
+.contactStrip .sectionLabel,
+.contactStrip h2 {
+  color: #fff8ef;
+}
+
+.contactStrip .secondaryButton {
+  background: rgba(255, 255, 255, 0.12);
+  border-color: rgba(255, 255, 255, 0.18);
+  color: #fff8ef;
+}
+
+@media (max-width: 980px) {
+  .heroSection,
+  .aboutGrid,
+  .credentialsLayout,
+  .projectGrid,
+  .skillsGrid,
+  .resumeGrid,
+  .contactStrip {
+    grid-template-columns: 1fr;
+  }
+
+  .heroSection {
+    padding-top: 28px;
+  }
+
+  .heroVisual {
+    min-height: auto;
+  }
+
+  .contactStrip {
+    display: block;
+  }
+}
+
+@media (max-width: 720px) {
+  main {
+    padding: 0 16px 48px;
+  }
+
+  .heroCopy h1 {
+    max-width: none;
+  }
+
+  .heroStats {
+    grid-template-columns: 1fr;
+  }
+
+  .aboutPanel,
+  .credentialCard,
+  .projectCard,
+  .skillCard,
+  .resumeCard,
+  .resumeNote,
+  .contactStrip {
+    padding: 22px;
+  }
+}

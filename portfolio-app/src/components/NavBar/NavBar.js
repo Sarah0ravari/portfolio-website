@@ -1,27 +1,34 @@
 import React from 'react';
-import logo from '../../assets/Logo.svg';
-import hamburger from '../../assets/mmm_hamburger.png';
-import { Link } from 'react-router-dom';
 import './NavBar.css';
 
-class NavBar extends React.Component {
-  render() {
-    return (
-      <header className='navContainer'>
-        <div className='logoContainer'>
-          <img className='logo' src={logo}/>
-          <Link className='homeLink link' to='/'>Home</Link>
-        </div>
-        <div className='navigationContainer'>
-          <Link className='navLink link' to='portfolio'>Portfolio</Link>
-          <Link className='navLink link' to='about'>About</Link>
-          <Link className='navLink link' to='resume'>Resume</Link>
-          <Link className='navLink link' to='contact'>Contact</Link>
-        </div>
-        <div className='hamburger'><img src={hamburger}/></div>
-      </header>
-    )
-  }
+const navItems = [
+  { href: '#about', label: 'About' },
+  { href: '#projects', label: 'Projects' },
+  { href: '#skills', label: 'Skills' },
+  { href: '#resume', label: 'Resume' },
+  { href: '#credentials', label: 'Credentials' },
+  { href: '#contact', label: 'Contact' }
+];
+
+function NavBar() {
+  return (
+    <header className="navContainer">
+      <a className="brandMark" href="#home">
+        <span className="brandInitials">SD</span>
+        <span className="brandText">Sarah Draper</span>
+      </a>
+      <nav className="navigationContainer" aria-label="Primary">
+        {navItems.map((item) => (
+          <a className="navLink" href={item.href} key={item.label}>
+            {item.label}
+          </a>
+        ))}
+      </nav>
+      <a className="navCta" href="https://github.com/Sarah0ravari" target="_blank" rel="noreferrer">
+        GitHub
+      </a>
+    </header>
+  );
 }
 
 export default NavBar;
