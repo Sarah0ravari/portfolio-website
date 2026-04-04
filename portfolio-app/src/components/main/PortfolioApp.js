@@ -48,6 +48,32 @@ const experienceHighlights = [
   'Interested in software engineering, data engineering, machine learning, and analytics-driven product work.'
 ];
 
+const workExperience = [
+  {
+    title: 'Data Engineer',
+    company: 'Liferay',
+    dates: 'Aug 2022 - Feb 2025',
+    location: 'Remote, CA',
+    details: [
+      'Built and improved data pipelines and analytics workflows to support internal reporting and product visibility.',
+      'Developed dashboards and reporting tools that helped teams track usage trends, engineering activity, and operational signals.',
+      'Worked across cloud infrastructure, SQL optimization, and data migration efforts to improve system performance and reliability.',
+      'Supported cross-functional engineering initiatives focused on scalability, maintainability, and smoother internal operations.'
+    ]
+  },
+  {
+    title: 'NSF Data Science Intern',
+    company: 'CSUN',
+    dates: 'Jun 2022 - Dec 2022',
+    location: 'National Science Foundation / Northridge, CA',
+    details: [
+      'Applied regression analysis and statistical modeling to study data patterns and support evidence-based conclusions.',
+      'Worked with experimental design concepts, including A/B testing methodology, to evaluate outcomes and compare model or feature performance.',
+      'Built and refined data preparation and analysis workflows that improved the reliability and efficiency of research results.'
+    ]
+  }
+];
+
 const skillGroups = [
   {
     heading: 'Languages',
@@ -176,6 +202,34 @@ function PortfolioApp() {
                 </div>
               ))}
             </div>
+          </div>
+        </section>
+
+        <section className="sectionBlock" id="experience">
+          <div className="sectionHeading">
+            <p className="sectionLabel">Experience</p>
+            <h2>Recent work that reflects how I build across software, analytics, and machine learning.</h2>
+          </div>
+          <div className="experienceList">
+            {workExperience.map((role) => (
+              <article className="experienceCard" key={`${role.title}-${role.company}`}>
+                <div className="experienceHeader">
+                  <div>
+                    <p className="experienceCompany">{role.company}</p>
+                    <h3>{role.title}</h3>
+                  </div>
+                  <div className="experienceMeta">
+                    <span>{role.dates}</span>
+                    <span>{role.location}</span>
+                  </div>
+                </div>
+                <ul>
+                  {role.details.map((detail) => (
+                    <li key={detail}>{detail}</li>
+                  ))}
+                </ul>
+              </article>
+            ))}
           </div>
         </section>
 
