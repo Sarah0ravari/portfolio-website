@@ -239,6 +239,10 @@ main {
   gap: 22px;
 }
 
+.projectGrid {
+  align-items: stretch;
+}
+
 .experienceList {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -289,11 +293,39 @@ main {
   font-size: 1.5rem;
 }
 
+.projectCard {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.projectTag {
+  margin: 0;
+}
+
+.projectCard h3 {
+  margin: 12px 0 0;
+}
+
+.projectSummary {
+  margin: 18px 0 0;
+}
+
 .projectCard ul,
 .resumeCard ul,
 .credentialCard ul {
   margin: 0 0 22px;
   padding-left: 18px;
+}
+
+.projectCard ul {
+  margin: 18px 0 0;
+  padding-left: 20px;
+}
+
+.projectCard a {
+  margin-top: auto;
+  align-self: flex-start;
 }
 
 .resumeCard {
