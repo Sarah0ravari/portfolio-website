@@ -52,20 +52,15 @@ const workExperience = [
   {
     title: 'Data Engineer',
     company: 'Liferay',
-    dates: 'Aug 2022 - Feb 2025',
-    location: 'Remote, CA',
     details: [
       'Built and improved data pipelines and analytics workflows to support internal reporting and product visibility.',
       'Developed dashboards and reporting tools that helped teams track usage trends, engineering activity, and operational signals.',
-      'Worked across cloud infrastructure, SQL optimization, and data migration efforts to improve system performance and reliability.',
-      'Supported cross-functional engineering initiatives focused on scalability, maintainability, and smoother internal operations.'
+      'Worked across cloud infrastructure, SQL optimization, and reliability efforts to improve internal systems and team workflows.'
     ]
   },
   {
     title: 'NSF Data Science Intern',
     company: 'CSUN',
-    dates: 'Jun 2022 - Dec 2022',
-    location: 'National Science Foundation / Northridge, CA',
     details: [
       'Applied regression analysis and statistical modeling to study data patterns and support evidence-based conclusions.',
       'Worked with experimental design concepts, including A/B testing methodology, to evaluate outcomes and compare model or feature performance.',
@@ -213,16 +208,8 @@ function PortfolioApp() {
           <div className="experienceList">
             {workExperience.map((role) => (
               <article className="experienceCard" key={`${role.title}-${role.company}`}>
-                <div className="experienceHeader">
-                  <div>
-                    <p className="experienceCompany">{role.company}</p>
-                    <h3>{role.title}</h3>
-                  </div>
-                  <div className="experienceMeta">
-                    <span>{role.dates}</span>
-                    <span>{role.location}</span>
-                  </div>
-                </div>
+                <p className="experienceCompany">{role.company}</p>
+                <h3>{role.title}</h3>
                 <ul>
                   {role.details.map((detail) => (
                     <li key={detail}>{detail}</li>

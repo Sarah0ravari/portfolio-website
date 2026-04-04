@@ -241,6 +241,7 @@ main {
 
 .experienceList {
   display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 22px;
 }
 
@@ -253,14 +254,6 @@ main {
   padding: 26px;
 }
 
-.experienceHeader {
-  display: flex;
-  align-items: flex-start;
-  justify-content: space-between;
-  gap: 20px;
-  margin-bottom: 18px;
-}
-
 .experienceCompany {
   margin: 0 0 8px;
   text-transform: uppercase;
@@ -270,23 +263,14 @@ main {
 }
 
 .experienceCard h3 {
-  margin: 0;
+  margin-top: 8px;
+  margin-bottom: 10px;
   color: #1f2d2a;
   font-size: 1.5rem;
 }
 
-.experienceMeta {
-  display: grid;
-  gap: 6px;
-  justify-items: end;
-  color: #556863;
-  font-size: 0.98rem;
-  line-height: 1.5;
-  text-align: right;
-}
-
 .experienceCard ul {
-  margin: 0;
+  margin: 0 0 22px;
   padding-left: 18px;
 }
 
@@ -381,6 +365,7 @@ main {
   .projectGrid,
   .skillsGrid,
   .resumeGrid,
+  .experienceList,
   .contactStrip {
     grid-template-columns: 1fr;
   }
@@ -420,14 +405,5 @@ main {
   .resumeNote,
   .contactStrip {
     padding: 22px;
-  }
-
-  .experienceHeader {
-    flex-direction: column;
-  }
-
-  .experienceMeta {
-    justify-items: start;
-    text-align: left;
   }
 }
